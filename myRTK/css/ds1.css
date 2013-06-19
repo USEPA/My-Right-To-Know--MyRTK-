@@ -1,0 +1,805 @@
+/* BASIC STYLESHEET FOR MYRTK Device Set  1 */
+/*			Version 0.9b			  		*/
+
+/* GENERAL STYLES */
+
+html {
+	background: #d9e0e8;
+	//width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: georgia, sans-serif;
+}
+
+body {
+	background: none !important;
+	min-width: 0px !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	height: 100%;
+}
+
+
+
+p, ul, li, a {
+	font-family: georgia, sans-serif;
+	font-size: 12px;
+}
+
+a, a:visited {
+	color: gray;
+}
+
+a:hover {
+	color: black;
+}
+
+ul, ol, li {
+	margin:0;
+	padding:0;
+}
+
+ul.nav a {
+	text-decoration: none;
+	color: #000;
+	font-size: 15px;
+}
+
+caption {
+	font-weight: bold;
+}
+
+hr {
+	display: none;
+}
+
+ul li img {
+	width: 30px;
+	height: 15px;
+}
+
+/* END GENERAL STYLES */
+
+
+
+
+/* BEGIN FRAMEWORK STYLES */
+
+#myheader {
+	background: url(../images/header.png) #fff no-repeat;
+	height: 39px;
+	position: relative;
+	padding-bottom: 5px;
+	border-bottom: 1px solid black;
+}
+
+#navigation {
+   overflow:hidden;
+   position:relative;
+}
+
+#navigation ol {
+	float:left;
+	list-style:none;
+	margin:0;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	padding:0;
+	position:relative;
+	left:50%;
+	text-align:center;
+	border-right: 1px solid black;
+
+}
+
+#navigation ol li {
+	display:inline;
+	float:left;
+	margin:0;
+	position:relative;
+	right:50%;
+	border: 1px solid black;
+	border-right: 1px solid black;
+
+}
+
+#navigation ol li:first-of-type {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+}
+
+#navigation ol li:last-of-type {
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-right: 1px solid black;
+}
+
+#navigation ol li a {
+	display:block;
+	margin:0 0 0 0px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	color:#000;
+	text-decoration:none;
+	font-size: 9px;
+}
+
+#navigation ol li:first-of-type a {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+}
+
+#navigation ol li:last-of-type a {
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+}
+
+#navigation ol li:hover {
+	background:#369;
+	color:#fff;
+}
+
+#navigation ol li a:hover {
+	background:#369;
+	color:#fff;
+}
+
+#navigation ol li a.active, #navigation ol li a.active:hover {
+	color:#000;
+	background:#fff;
+	font-weight:bold;
+}
+
+#content {
+	border: 1px solid black;
+	background: #ffffff;
+	margin: 5px;
+	-webkit-box-shadow: 2px 0px 4px #888;
+	-moz-box-shadow: #888 2px 0px 4px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+#content p {
+	font-size: 12px;
+	padding: 5px 10px 5px 10px;
+}
+
+#content ul li {
+	padding-bottom: 10px;
+}
+
+#content ul, #content li, #content a {
+	font-size: 13px;
+}
+
+#content ul {
+	padding: 0px 15px 5px 30px;
+}
+
+#content h1 {
+	font-size: 17px;
+	padding: 5px 5px 8px 5px;
+}
+
+#content h2 {
+	font-size: 15px;
+	padding: 5px 10px 3px 15px;
+}
+
+#content h3 {
+	font-size: 12px;
+	padding: 5px 10px 3px 15px;
+	font-variant: small-caps;
+}
+
+#content .glossary_item {
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+#content .map_legend {
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+#content table {
+	padding: 10px;
+	font-size: 12px;
+}
+
+#footer {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+span.feedback {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 150px;
+	font-size: 12px;
+	padding: 0;
+	text-align: center;
+	height: 45px;
+}
+
+/* END FRAMEWORK STYLES */
+
+
+
+/* INDEX PAGE STYLES */
+
+#gotosearch {
+	text-align: center;
+	padding: 15px 0px 5px 0px !important;
+}
+
+/* END INDEX PAGE STYLES */
+
+
+
+
+/* SEARCH PAGE STYLES */
+
+label {
+	display: none;
+	width:45px;
+}
+
+ul li input.searchbox {
+    color: #000;
+    font: normal 13px georgia;
+	background-color: transparent;
+    display: inline-block;
+    margin-left: 0px;
+	width: 100%;
+    border-top: 0;
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+#searchform {
+	margin: 0px auto 10px auto;
+	width: 250px;
+	padding: 0px !important;
+}
+
+#searchform li {
+	list-style-type: none;
+	color: black;
+	padding: 5px 10px 5px 10px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	-webkit-box-shadow: 2px 0px 4px #888;
+	-moz-box-shadow: #888 2px 0px 4px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+}
+
+#searchform li input {
+	height: 25px;
+	border: none;
+	-webkit-appearance: none; 
+}
+
+#searchform li:first-of-type {
+    border: 1px solid black;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+    -webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	
+}
+/*
+#searchform li:nth-last-of-type(2) {
+    -webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-box-shadow: 2px -1px 4px #888;
+	-moz-box-shadow: #888 2px -1px 4px;
+}
+
+#searchform li:last-of-type {
+	margin-top: 10px;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+    border: 1px solid black;
+	width:50%
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-box-shadow: 2px 2px 2px #888;
+	-moz-box-shadow: #888 2px 2px 2px;
+}
+**/
+#submit_form {
+	background-color: transparent;
+	border: 1px solid black;
+	margin: 0;
+	line-height: 100%;
+	width: 60%;
+    font: bold 14px georgia;
+	cursor: pointer;
+}
+
+/* END SEARCH PAGE STYLES */
+
+
+
+
+/* INFO PAGE STYLES */
+
+#glossary {
+	padding: 0px 0px 10px 0px;
+}
+
+#glossary p {
+	text-indent: 20px;
+}
+
+#glossary ul {
+	padding: 0px 15px 0px 30px;
+}
+
+.icon {
+	margin-left: 10px;
+	float: left;
+}
+
+ul.info {
+	padding: 0px 15px 0px 30px;
+}
+
+/* END INFO PAGE STYLES */
+
+
+
+
+/* LIST PAGE STYLES */
+
+#content #retrlist {
+	list-style:none;
+	padding: 0px;
+}
+
+#content #retrlist li {
+	list-style-type: none;
+	color: black;
+	padding: 5px;
+	padding-left: 10px;
+	border-bottom: 1px solid black;
+	-webkit-box-shadow: 2px 0px 4px #888;
+	-moz-box-shadow: #888 2px 0px 4px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+}
+
+#content #retrlist li:hover {
+	background:#369;
+
+}
+
+#content #retrlist li ul {
+	padding: 0px;
+	border: 0px;
+}
+
+#content #retrlist li:hover ul li {
+	color: #fff;
+}
+
+#content #retrlist li ul li:first-of-type {
+	padding: 0px;
+	border: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+}
+#content #retrlist li ul li:last-of-type {
+	padding: 0px;
+	border: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-box-shadow: 0px 0px 0px #888;
+	-moz-box-shadow: #888 0px 0px 0px;
+}
+
+#content #retrlist li ul li {
+	padding: 0px;
+	border: 0px;
+	-webkit-box-shadow: 0px 0px 0px #888;
+	-moz-box-shadow: #888 0px 0px 0px;
+}
+
+#content #retrlist li ul li img {
+	width: 6px;
+	height: 10px;
+}
+
+#content #retrlist li:first-of-type {
+    border-top: 1px solid black;
+	-moz-box-shadow: #888 0px 0px 0px;
+	-webkit-box-shadow: 0px 0px 0px #888;
+}
+
+#content #retrlist li:nth-last-of-type(2) {
+	border-bottom: 0;
+}
+
+#content #retrlist li:last-of-type {
+    border-top: 1px solid black;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+
+/* END LIST PAGE STYLES */
+
+
+
+
+/* MAP PAGE STYLES */
+
+#map_content {
+	height: 88%;
+	margin-bottom: 10px;
+}
+
+ul.mapaddr li img {
+	width: 12px;
+	height: 20px;
+}
+
+#trimap {
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	margin-bottom: 10px;
+}
+
+/* END MAP PAGE STYLES */
+
+
+
+
+/* REPORT PAGE STYLES */
+
+.content_report {
+	border-bottom: 1px solid black;
+	width: 100%;
+	padding: 0px 0px 5px 0px;
+	margin: 0px auto 0px auto;
+}
+
+.content_report:last-of-type {
+	border-bottom: 0px solid black;
+}
+
+.content_report ul {
+	padding: 0px 15px 0px 30px;
+}
+
+.content_report ul li {
+	padding-bottom: 5px !important;
+	list-style: none;
+}
+
+.content_report p {
+	font-size: 12px;
+	padding: 10px;
+}
+
+.content_report ul, .content_report li, .content_report a {
+	font-size: 13px;
+}
+
+.content_report h1 {
+	font-size: 16px !important;
+	padding: 5px 5px 5px 5px;
+	letter-spacing: -0.5px;
+	word-spacing: -2px;
+}
+
+.content_report h2 {
+	font-size: 13px !important;
+	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-left: 5px;
+}
+
+.content_report table {
+	padding: 10px;
+	font-size: 12px;
+}
+
+/* Facility DIV */
+#facility {
+	border-top: 1px solid black;
+}
+/* End Facility DIV */
+
+
+/* Context DIV */
+
+/* End Context DIV */
+
+
+/* Releases DIV */
+
+#releases h1{
+	width: 100%;
+	padding: 5px;
+	margin: 0px;
+}
+
+#mydata {
+	vertical-align: top;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mydata td {
+	padding: 5px 10px 5px 10px;
+}
+
+.fromtable {
+	margin: 0px auto 0px auto;
+	display: block;
+}
+
+/* End Releases DIV */
+
+
+/* Chemicals DIV */
+
+#chems {
+	padding: 0px 5px 0px 5px !important;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#chems td {
+	font-size: 10px;
+	padding: 2px 2px 2px 2px;
+}
+
+#chems th {
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 10px;
+}
+
+#chems .hider {
+	display: none;
+}
+
+#chems .bar {
+	height: 17px;
+	vertical-align: middle;
+}
+
+#chems tr.chemical a {
+	font-size: 10px;
+	color: black;
+	line-height: 1.5em;
+}
+
+#chems ul.legend {
+	float: left;
+	padding: 0px 15px 5px 15px;
+	padding-top: 10px;
+}
+
+#chems ul.legend li {
+	text-align: left;
+	display: inline;
+	padding-right: 10px;
+}
+
+#chems thead tr:last-of-type th {
+	border-bottom: 1px solid black;
+}
+
+#chems tr.chemical:nth-of-type(odd) {
+	background-color: #E1ECF7;
+}
+
+#chems tr.chemical:nth-of-type(even) {
+	background-color: #FFFFFF;
+}
+
+#chems tr.chemical:last-of-type td {
+	border-bottom: 1px solid black;
+}
+
+#chems tr.chemical td:first-of-type {
+	text-align: left;
+}
+
+#chems tr.chemical td {
+	text-align: center;
+}
+
+
+/* End Chemicals DIV */
+
+
+/* Compliance DIV */
+
+#comp {
+	padding: 0px 10px 5px 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+
+#comp td {
+	padding: 0px 5px 0px 5px;
+	text-align: center;
+	width: 5px;
+	height: 10px;
+}
+
+#comp ul.legend {
+	padding: 10px 0px 0px 0px;
+	float: left;
+}
+
+#comp ul.legend li {
+	display: block;
+	text-align: left;
+	font-size: 12px;
+	padding-right: 10px;
+}
+
+#inspect {
+	padding: 5px 5px 10px 5px;
+	width: 100%;
+}
+
+#inspect td {
+	padding: 5px 0px 5px 0px;
+	font-size: 13px;
+}
+#inspect td:nth-of-type(odd) {
+	width: 45%;
+	
+}
+
+#inspect td:nth-of-type(even) {
+	text-align: left;
+	width: 50%;
+	padding-left: 10px;
+}
+
+#inspect td a {
+	float: right;
+	padding-right: 15px;
+}
+
+#whatcan {
+	text-align: center;
+}
+
+#whatcan a {
+	float: none !important;
+}
+
+#permits {
+	padding: 0px 10px 0px 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#permits th {
+	font-weight: normal;
+	padding: 0px 20px 0px 20px;
+}
+
+#permits td {
+	padding: 0px 20px 5px 20px;
+	text-align: center;
+}
+
+/* End Compliance DIV */
+
+/* END REPORT PAGE STYLES */
+
+
+
+
+/* CHEMICALS PAGE STYLES */
+
+dl.chem_gloss {
+	width: 100%;
+	padding: 5px 0px 10px 0px;
+}
+
+dl.chem_gloss dt {
+	margin-left: 15px;
+	font-size: 11px;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+	width: 35%;
+	padding: 5px 5px 5px 0px;
+}
+
+dl.chem_gloss dd {
+	font-size: 12px;
+	padding: 5px 15px 5px 15px;
+}
+
+div.back {
+	padding: 15px 0px 15px 10px;
+}
+
+div.back a {
+	font-variant: small-caps;
+	font-size: 12px;
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	padding: 5px 7px 5px 7px;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+div.back a:hover {
+	background:#369;
+	color:#fff;
+}
+
+
+#chem_gloss {
+	padding: 0px 0px 10px 5px;
+	list-style: none;
+	font-size: 13px;
+}
+
+#chem_gloss dt {
+	padding: 3px;
+	border-bottom: 1px solid gray;
+	border-left: 1px solid gray;
+}
+
+#chem_gloss dd {
+	background:url(../images/raquo.png) no-repeat 0 9px;
+	padding: 3px 8px 3px 8px;
+	margin: 0px 0px 0px 3px;
+}
+
+.footnote {
+	margin: 10px 0px 0px 0px;
+	padding: 5px 0px 5px 0px;
+	font-size: 9px;
+	text-align: center;
+}
+
+/* END CHEMICALS PAGE STYLES */
